@@ -1,0 +1,221 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mes débuts avec la Programmation Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            min-height: 330vh;
+            background-image: url(images/fond.jpeg.jpg); /* Chemin de l'image de fond */
+    background-size: cover;
+        }
+
+        #imageContainer {
+            position: relative;
+            width: 100%;
+            min-height: 330vh; /* Définit la hauteur minimale du conteneur d'image à 100% de la hauteur de la fenêtre du navigateur */
+    overflow: auto;
+        }
+
+        #imageContainer img {
+            display: block;
+            width: 100%;
+        }
+
+        #formContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+        }
+
+         
+
+
+        form {
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(188, 8, 8);  
+            font-size: 12pt; /* Taille de police augmentée */
+            text-transform: uppercase; /* Mettre en majuscules */
+            letter-spacing: 2px; /* Espacement entre les lettres */
+            font-family: "Times New Roman", Times, serif; /* Police différente */
+            margin-bottom: 20px; /* Espace sous le titre */
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        select, input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+         
+        .email {
+    font-family: Cambria, serif;
+    font-size: 10pt;
+  }
+  section-divider  {
+    width: 70%;
+    height: 4px;
+    background-color: green;
+    margin: 20px auto;
+    border: none ;
+  }
+  
+    </style>
+</head>
+ 
+</style>
+<body>
+    <div id="top"></div>
+    <ol id="sections-navigation">
+        <li><a href="#informations-personnelles">Informations Personnelles du Candidat</a></li>
+        <li><a href="#cursus-etudiant">Cursus de l'étudiant</a></li>
+        <li><a href="#langages-programmation">Langages de Programmation maîtrisés</a></li>
+        <li><a href="#exercice-c">Exercice : Programme en C</a></li>
+        <li><a href="#remarque">Remarque</a></li>
+    </ol>
+    
+    <div id="imageContainer">
+        <img src="images/fond.jpeg.jpg" alt="Image de fond">
+        <div id="formContainer">
+
+
+      <section id="informations-personnelles"></section>
+            <h2>Informations Personnelles du Candidat</h2>
+
+
+            <form>
+                <p>
+                    <label for="nom"><strong>Nom:</strong></label>
+                    <input type="text" id="nom" name="nom"><br>
+                    <label for="prenom"><strong>Prénom:</strong></label>
+                    <input type="text" id="prenom" name="prenom"><br>
+                    <label for="date_naissance"><strong>Date de naissance:</strong></label>
+                    <input type="text" id="date_naissance" name="date_naissance"><br>
+                    <label for="adresse"><strong>Adresse:</strong></label>
+                    <input type="text" id="adresse" name="adresse"><br>
+                    <label for="email"><strong>Adresse email:</strong></label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="telephone"><strong>Numéro de Téléphone:</strong></label>
+                    <input type="text" id="telephone" name="telephone"><br>
+                    <label for="situation_familiale"><strong>Situation Familiale:</strong></label>
+                    <select id="situation_familiale" name="situation_familiale">
+                        <option value="celibataire">Célibataire</option>
+                        <option value="marie">Marié</option>
+                    </select>
+                </p>
+            </form> 
+            <section id="cursus-etudiant">
+
+            <h2><strong>Cursus de l'étudiant</strong></h2>
+           
+            <form>
+                <p>
+                    <strong>1 Cycle Primaire:</strong><br>
+                    &nbsp;&nbsp; o Ecole : <em><input type="text" name="ecole"></em><br>
+                    &nbsp;&nbsp; o Année de première inscription : <input type="text" name="annee_primaire"><br>
+                    <strong>2 Cycle Moyen:</strong><br>
+                    &nbsp;&nbsp; CEM : <em><input type="text" name="cem"></em><br>
+                    &nbsp;&nbsp; Année de première inscription : <input type="text" name="annee_moyen"><br>
+                    <strong>3 Cycle Secondaire:</strong><br>
+                    &nbsp;&nbsp; Lycée : <em><input type="text" name="lycee"></em><br>
+                    &nbsp;&nbsp Année de première inscription : <input type="text" name="annee_secondaire"><br>
+                    &nbsp;&nbsp; Bac : 
+                    <select name="bac">
+                        <option value="Maths">Maths</option>
+                        <option value="Sciences de la Nature et de la Vie">Sciences de la Nature et de la Vie</option>
+                        <option value="Maths Technique">Maths Technique</option>
+                     </select><br>
+                    <strong>4 Cycle Universitaire:</strong><br>
+                    &nbsp;&nbsp;Université : <em><input type="text" name="universite"></em><br>
+                    &nbsp;&nbsp;Année de première inscription : <input type="text" name="annee_universitaire"><br>
+                </p>
+            </form>
+            <section id="langages-programmation"></section>
+            <h2>Langages de Programmation maîtrisés</h2>
+            
+
+            <ul>
+                <li><img src="images/html.jpeg.jpg" alt="Puce" style="width: 10px; height: 10px;"> HTML</li>
+                <li><img src=" images/css.jpeg.jpg" alt="Puce" style="width: 10px; height: 10px;"> CSS</li>
+                <li><img src=" images/js.jpeg.jpg" alt="Puce" style="width: 10px; height: 10px;"> JavaScript</li>
+                <li><img src="images/python.jpeg.jpg" alt="Puce" style="width: 10px; height: 10px;"> Python</li>
+            </ul>
+             <section id="exercice-c"></section>
+            <h2>Exercice : Programme en C</h2>
+           
+
+            <div class="CSC">
+                <style>
+                    .CSC {
+            font-family: monospace;
+            white-space: pre-wrap;
+            color: black;
+            font-size: 18px;
+            line-height: 0; 
+                    }
+                    .keyword {
+                        color: red;
+                        font-weight: bold;
+                    }
+                     
+                </style>
+                <p>//  remplir matrice et calculer la sommes </p>
+                <p><span class="keyword">#include</span> &lt;stdio.h&gt;</p>
+                <p><span class="keyword">int</span> main() {</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> rows , cols , i , j ,sum=0;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">scanf</span>( "%d %d",&rows,&cols);</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> matrix[rows][cols];</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">printf</span>("Entrez the elements of matrix");</p>
+        
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(<span class="keyword">int</span> i = 0; i &lt; rows ; i++) {</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>(<span class="keyword">int</span> j = 0; j &lt; cols;  j++) {</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">printf</span>("Element [%d][%d] : ", i, j);</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>(matrix[i][j] &gt; 0) {</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += matrix[i][j];</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">printf</span>("La somme est :",%d sum);</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;</p>
+                <p>}</p>
+
+            </div>
+            <section id="remarque">
+
+            <p> Remarque : Le code d'une page web doit être mis entre les deux balises &lt;HTML&gt; et &lt;/HTML&gt; et il peut contenir du texte ou des formules mathématiques telle que : πi = α(X1 + Y2) / λi</p>
+            <div class="back-to-top">
+                <a href="#top"><strong>HAUT DE PAGE</strong></a>
+            </div>
+        
+            <p id="top"></p>
+            
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <p id="top"></p>
+</body>
+</html>
